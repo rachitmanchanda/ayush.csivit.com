@@ -30,12 +30,7 @@
 </head>
 
 <body class="is-preload">
-
-
 	<div id="wrapper">
-
-
-
 		<section class="intro">
 			<header>
 				<h1>Ayush Bishnoi</h1>
@@ -47,9 +42,7 @@
 			<div class="content">
 				<span class="image fill" data-position="center"><img src="images/greenscreen.png"
 						alt="Hey, that's me" /></span>
-
 			</div>
-
 		</section>
 
 		<section id="first">
@@ -58,10 +51,13 @@
 			</header>
 			<div class="content">
 				<p>
-					<strong>Ayush Bishnoi</strong> was introduced to the world of technology in the 9th grade when he built his first PC. This is where his
-				obsession with Linus Tech Tips started. In his second year now, he has seen the world's design grow from a user's
-				perspective as well as from a developer's. Coordinator of a design event Clickbait, now the Vice-president of CSI-VIT.
-				Ready to take on the next challenge from wherever it approaches.
+					<strong>Ayush Bishnoi</strong> was introduced to the world of technology in the 9th grade when he
+					built his first PC. This is where his
+					obsession with Linus Tech Tips started. In his second year now, he has seen the world's design grow
+					from a user's
+					perspective as well as from a developer's. Coordinator of a design event Clickbait, now the
+					Vice-president of CSI-VIT.
+					Ready to take on the next challenge from wherever it approaches.
 				</p>
 				<span class="image main"><img src="images/starscream.jpg" alt="" /></span>
 				<blockquote>
@@ -75,9 +71,7 @@
 
 		<section>
 			<header>
-				<h2>
-					My Skills
-				</h2>
+				<h2>My Skills</h2>
 			</header>
 			<div class="content">
 				<p><strong>My area of expertise </strong> these are the various technical/life skills that I have picked
@@ -93,17 +87,12 @@
 				<p>All the skills mentioned here are the skills I am confident in, skills that I have come to master as
 					a developer and designer, skills that I am comfortable mentoring anyone in.
 				</p>
-
-
-
 			</div>
 		</section>
 
-
 		<section>
 			<header>
-				<h2>Experience
-				</h2>
+				<h2>Experience</h2>
 			</header>
 			<div class="content">
 				<h3>Computer Society of India</h3>
@@ -162,7 +151,6 @@
 					</div>
 				</section>
 
-
 				<section>
 					<header>
 						<h3>Riddler</h3>
@@ -216,9 +204,8 @@
 			<div class="content">
 				<p><strong>Schooling</strong> initially started from Delhi Public School Vasant Kunj. Later in
 					5<sup>th</sup> grade when we shifted to Gurgaon, I continued at Shikshantar. Here I spent all my
-					remaining 7 school years.</p>
-
-
+					remaining 7 school years.
+				</p>
 				<h4>Scorecard</h4>
 				<div class="table-wrapper">
 					<table class="alt">
@@ -238,20 +225,11 @@
 						</tbody>
 					</table>
 				</div>
-
-
-
-
-
-
-
 				<div class="content">
 					<p><strong>Vellore Institute of Technology, Vellore</strong> after 12<sup>th</sup> I had realized my
 						passion lay with engineering, after a battery of gruesome entrance exams I am pursuing my B.Tech
 						in <i>Electronics and Communication Engineering with Specialization in Internet of Things and
 							Sensors.</i></p>
-
-
 					<h4>Scorecard</h4>
 					<div class="table-wrapper">
 						<table class="alt">
@@ -271,9 +249,6 @@
 							</tbody>
 						</table>
 					</div>
-
-
-
 		</section>
 		<span hidden><input class="date" type="date" value="1999-09-27" />
 			<input class="time" type="time" value="23:32" /> </span>
@@ -287,34 +262,31 @@
 				<ul class="actions">
 					<li><a href="images/Ayush Bishnoi Resume 02-02-19 .pdf" target="_blank"
 							class="button primary icon fa-download">Download</a></li>
-					<li><a href="https://csivit.com"class="button icon fa-time">CSI-VIT's website</a></li>
+					<li><a href="https://csivit.com" target="_blank" class="button icon fa-time">CSI-VIT's website</a></li>
 				</ul>
 				<p>I am currently <span class="js-display-difference"></span> old</p>
 			</div>
 		</section>
-				<script>
+		<script>
+			function calculateDifference(thenString) {
+				var m1 = moment(Date.now())
+				var m2 = moment(new Date(thenString))
+				var diff = moment.preciseDiff(m1, m2)
+				return diff
+			}
 
-					function calculateDifference(thenString) {
-						var m1 = moment(Date.now())
-						var m2 = moment(new Date(thenString))
-						var diff = moment.preciseDiff(m1, m2)
-						return diff
-					}
+			function displayDifference() {
+				displayBox.textContent = calculateDifference(dateInput.value + ", " + timeInput.value)
+			}
 
-					function displayDifference() {
-						displayBox.textContent = calculateDifference(dateInput.value + ", " + timeInput.value)
-					}
-
-					const dateInput = document.querySelector(".date")
-					const timeInput = document.querySelector(".time")
-					const displayBox = document.querySelector(".js-display-difference")
-					dateInput.addEventListener("change", displayDifference)
-					timeInput.addEventListener("change", displayDifference)
-					displayDifference()
-					
-					setInterval(displayDifference, 1000)
-
-				</script>
+			const dateInput = document.querySelector(".date")
+			const timeInput = document.querySelector(".time")
+			const displayBox = document.querySelector(".js-display-difference")
+			dateInput.addEventListener("change", displayDifference)
+			timeInput.addEventListener("change", displayDifference)
+			displayDifference()
+			setInterval(displayDifference, 1000)
+		</script>
 
 		<section>
 			<header>
@@ -379,8 +351,6 @@
 
 		<div class="copyright">&copy; Wasn't really make with &lt3, it was a <a href="https://html5up.net">template</a>.
 		</div>
-		<!-- Copyright 
-				-->
 	</div>
 
 	<script src="assets/js/jquery.min.js"></script>

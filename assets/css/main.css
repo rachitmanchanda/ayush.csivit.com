@@ -4075,3 +4075,13 @@ body.is-ie #wrapper>section>.content>section {
 	}
 
 }
+
+#flip {
+		color: rgba(0, 0, 0, 0.25);
+		font-size: 1rem;
+		left: 50vw;
+}
+
+#panel {
+	display: none;
+}

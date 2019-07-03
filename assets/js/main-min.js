@@ -10,3 +10,12 @@ setTimeout(function(){$modal.removeClass('visible')
 setTimeout(function(){$modalImg.attr('src','');$modal[0]._locked=false;$body.focus();},475);},125);}).on('keypress','.modal',function(event){var $modal=$(this);if(event.keyCode==27)
 $modal.trigger('click');}).on('mouseup mousedown mousemove','.modal',function(event){event.stopPropagation();}).prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>').find('img').on('load',function(event){var $modalImg=$(this),$modal=$modalImg.parents('.modal');setTimeout(function(){if(!$modal.hasClass('visible'))
 return;$modal.addClass('loaded');},275);});})(jQuery);
+
+$(document).ready(function () {
+    $("#flip").click(function () {
+        $("#panel").slideToggle("");
+        $("#flip").text(($("#flip").text() == 'Read more') ? 'Read less' : 'Read more')
+    });
+});
+
+
